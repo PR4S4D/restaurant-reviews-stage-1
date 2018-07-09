@@ -26,7 +26,8 @@ initMap = () => {
       L
         .tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken' +
           '}', {
-        mapboxToken: '<your MAPBOX API KEY HERE>',
+        mapboxToken: 'pk.eyJ1Ijoic2xwMTk5MyIsImEiOiJjampic2MxMTAxdjZyM2t0ZWh1dGpudjhnIn0.DkZx-BtdpEHfi' +
+            'X6HM5S33g',
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contr' +
             'ibutors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,' +
