@@ -1,6 +1,6 @@
 @media screen and (min-width: 481px) {
   #restaurants-list li {
-    width: 33%;
+    width: 42%;
   }
 
   #breadcrumb {
@@ -29,6 +29,15 @@
   #reviews-list {
     flex-direction: row;
   }
+
+  #reviews-list li {
+    width: 18%;
+  }
+
+  #reviews-container,
+  #restaurant-container {
+    margin: 0 2%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -48,12 +57,11 @@
 
   #restaurants-list {
     flex-direction: row;
-    width: 90%;
     margin: auto;
   }
 
   #restaurants-list li {
-    width: 24%;
+    width: 28%;
   }
 
   #reviews-container,

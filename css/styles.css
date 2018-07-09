@@ -51,7 +51,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #3397db;
+  color: /* #3397db; */ #6dc1fb;
   text-decoration: none;
 }
 a img {
@@ -303,7 +303,6 @@ nav h1 a {
 #reviews-list {
   padding: 2%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
