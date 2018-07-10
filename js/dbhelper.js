@@ -153,7 +153,23 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+
+    let imgSrc = `/img/${restaurant.photograph}`;
+
+    let [imagePath,
+      imgExtension] = imgSrc.split(".");
+
+    let imageSuffix = "_2x.";
+
+    //fetch 1x images for lower resolution devices
+    if (window) {
+      imageSuffix = window.innerWidth < 500
+        ? "_1x."
+        : "_2x.";
+    }
+
+    return imagePath + imageSuffix + imgExtension;
+
   }
 
   /**
