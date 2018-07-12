@@ -1,4 +1,4 @@
-importScripts('../js/cache-polyfill.js')
+importScripts('./js/cache-polyfill.js')
 
 var CACHE_NAME = "restaurant-review-cache-ver-2";
 var urlsToCache = [
