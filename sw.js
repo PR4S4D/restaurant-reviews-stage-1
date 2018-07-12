@@ -1,4 +1,6 @@
-var CACHE_NAME = "restaurant-review-cache-1";
+importScripts('../js/cache-polyfill.js')
+
+var CACHE_NAME = "restaurant-review-cache-ver-2";
 var urlsToCache = [
   '/',
   'index.html',
@@ -8,6 +10,7 @@ var urlsToCache = [
   '/css/responsive.css',
   '/js/dbhelper.js',
   '/js/main.js',
+  '/js/cache-polyfill.js',
   '/data/restaurants.json',
   'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js'

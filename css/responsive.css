@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 500px) {
   #restaurants-list li {
     width: 42%;
   }
@@ -28,10 +28,13 @@
 
   #reviews-list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #reviews-list li {
-    width: 18%;
+    width: 45%;
+    flex-wrap: wrap;
+    margin: 2%;
   }
 
   #reviews-container,
@@ -74,8 +77,12 @@
     width: 100%;
   }
 
+  #reviews-list {
+    flex-wrap: nowrap;
+  }
+
   #reviews-list li {
-    width: 24%;
+    width: 30%;
   }
 }
 
