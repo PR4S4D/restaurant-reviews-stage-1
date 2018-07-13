@@ -18,9 +18,6 @@ class DBHelper {
   static fetchRestaurants(callback) {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', DBHelper.DATABASE_URL);
-    xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
-    xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS')
-    xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type, X-Auth-Token')
     xhr.onload = () => {
       if (xhr.status === 200) { // Got a success response from server!
         const json = JSON.parse(xhr.responseText);
